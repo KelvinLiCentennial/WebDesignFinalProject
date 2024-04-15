@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Real Estate</title>
+    <link href="Styles.Css" rel="stylesheet" type="text/css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oxanium:wght@200..800&display=swap" rel="stylesheet">
+</head>
+<body>
+<div id="content">
+    <header>
+        <h1>Ahjin Guild Real Estate</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="HomePage.html">Home</a></li>
+            <li class="between"><a href="PropertyList.html">Property List</a></li>
+            <li><a href="ContactUs.html">Contact Us</a></li>
+            <li><a class="between" href="Location.html">Location</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <form style="padding: 2px" method="post">
+            <h3>Personal information</h3><br>
+            <label for="firstname">1. First name<sup>*</sup></label>
+            <input type="text" name="name" id="firstname" required>
+            <label for="lastname">2. Last name<sup>*</sup></label>
+            <input type="text" name="name" id="lastname" required>
+            <label for="email">3. Email<sup>*</sup></label>
+            <input type="text" name="name" id="email" required>
+            
+            <h3>House information</h3><br>
+            <label>4.Property type<sup>*</sup></label><br>
+            <label><input type="radio" name="housetype" value="house"> House</label><br>
+            <label><input type="radio" name="housetype" value="condominium"> Condominium</label><br>
+            <label><input type="radio" name="housetype" value="other"> Other</label><br>
+            
+            <label for="bedroom">5.Bedroom number<sup>*</sup></label>
+            <input type="number" name="bed" id="bedroom" required>
+            <label for="bathroom">6.Bathroom number<sup>*</sup></label>
+            <input type="number" name="bath" id="bathroom" required>
+            <label>7.Price Range($USD)<sup>*</sup></label><br>
+            <label>min<sup>*</sup><input type="number" name="minprice" id="minprice" required></label><br>
+            <label>max<sup>*</sup><input type="number" name="maxprice" id="maxprice" required></label><br>
+            <label for="comment" >8.Comments:</label><br>
+            <input class="textbox" type="text" name="comment" id="comment"><br><br><br>
+
+            <input type="submit" value="Submit"><br>
+            <input type="reset" value="Reset">
+            
+        </form>
+    </main>
+    
+    <aside>
+        <figure>
+            <h2>Mr Sung-Jin-Woo</h2>
+            <img src="Images/Sung Jin Woo.jpeg" width="300" height="450" alt="agent" id="photo">
+            <br>Phone:123-456-7890
+            <br>Email:<a href="mailto:kli164@my.centennialcollege.ca">click here</a>
+        </figure>
+    </aside>
+    <footer>
+        Copyright:@KelvinLi
+    </footer>
+</div>
+
+</body>
+</html>
